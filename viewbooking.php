@@ -104,6 +104,12 @@ footer { text-align:center; padding:20px; font-size:14px; color:rgba(255,255,255
                 <td><?php echo esc($booking['dateto']); ?></td>
             </tr>
         </table>
+        <p>
+            <form action="deletebooking.php?bookingid=<?php echo $formbookingid; ?>" method="get">
+                <input type="submit" value="Delete">
+            </form>
+            <a href="deletebooking.php?bookingid=<?php echo $formbookingid; ?>">Delete</a>
+        </p>
     </section>
 </main>
 
